@@ -110,6 +110,8 @@ public class PackageChange extends BroadcastReceiver {
 						notificationBuilder.setContentText(context.getString(R.string.msg_reboot));
 						notificationBuilder.setWhen(System.currentTimeMillis());
 						notificationBuilder.setAutoCancel(true);
+						notificationBuilder.setOngoing(true);
+						
 						Notification notification = notificationBuilder.build();
 
 						// Notify
